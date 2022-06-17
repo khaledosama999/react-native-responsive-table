@@ -1,0 +1,13 @@
+current directory: /Users/khaledosama/projects/react-native-responsive-table/example/vendor/bundle/ruby/2.7.0/gems/json-2.6.1/ext/json
+/Users/khaledosama/.rvm/rubies/ruby-2.7.5/bin/ruby -I /Users/khaledosama/.rvm/rubies/ruby-2.7.5/lib/ruby/2.7.0 -r ./siteconf20220617-55802-1g2fjoj.rb extconf.rb
+creating Makefile
+
+current directory: /Users/khaledosama/projects/react-native-responsive-table/example/vendor/bundle/ruby/2.7.0/gems/json-2.6.1/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/khaledosama/projects/react-native-responsive-table/example/vendor/bundle/ruby/2.7.0/gems/json-2.6.1/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/khaledosama/projects/react-native-responsive-table/example/vendor/bundle/ruby/2.7.0/gems/json-2.6.1/ext/json
+make "DESTDIR=" install
