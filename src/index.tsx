@@ -1,26 +1,62 @@
 import * as React from 'react'
-import { Button, NativeModules, StyleSheet, Text, View } from 'react-native'
+import { ScrollView, StyleSheet, View, ViewStyle } from 'react-native'
 
-export const addOne = (input: number) => input + 1
+import { BORDER_COLOR } from './constants'
+import Cell from './table-cell'
+import Row from './table-row'
 
-export const Counter = () => {
-  const [count, setCount] = React.useState(0)
+type TableProps = {
+  style?: StyleSheet.NamedStyles<ViewStyle>
+  isScrollable?: Boolean
+  height?: Number | String
+}
+
+const Table: React.FC<TableProps> & { Row: typeof Row; Cell: typeof Cell } = ({
+  style = {},
+  children,
+  isScrollable = false,
+  height,
+}) => {
+  const customStyles: any = {}
+  if (height !== null || height != undefined) customStyles.height = height
+
+  const finalTableStyle = {
+    ...styles.table,
+    ...customStyles,
+    ...style,
+  } as any
+
+  const childrenArray = React.Children.toArray(children)
+  const Container = isScrollable ? ScrollView : View
 
   return (
-    <View style={styles.container}>
-      <Text>You pressed {count} times</Text>
-      <Button onPress={() => setCount(addOne(count))} title='Press Me' />
-    </View>
+    <Container style={finalTableStyle}>
+      {childrenArray.map((child: any, index) => {
+        const isLast = index === childrenArray.length - 1
+
+        return React.cloneElement(child, {
+          ...child.props,
+          isLast,
+        })
+      })}
+    </Container>
   )
 }
 
+Table.Row = Row
+Table.Cell = Cell
+
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    height: 200,
+  table: {
+    width: '100%',
+    borderRadius: 4,
+    borderStyle: 'solid',
+    borderWidth: 1,
+    display: 'flex',
+    flexDirection: 'column',
+    borderColor: BORDER_COLOR,
+    backgroundColor: '#FFFFFF',
   },
 })
 
-export default NativeModules.RNModuleTemplateModule
+export default Table
