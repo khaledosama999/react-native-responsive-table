@@ -7,7 +7,9 @@
   "types": "lib/index.d.ts",
   "author": "Khaled Osama <khaledosama52@gmail.com@gmail.com>",
   "license": "MIT",
-  "files": [ "lib" ],
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "compile": "rm -rf lib && tsc -p .",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
@@ -31,6 +33,7 @@
     "cz-conventional-changelog": "3.3.0",
     "eslint": "^8.17.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
+    "generate-changelog": "^1.8.0",
     "jest": "^28.1.1",
     "metro-react-native-babel-preset": "^0.71.1",
     "react": "^18.2.0",
