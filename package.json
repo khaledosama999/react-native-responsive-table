@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "homepage": "https://github.com/khaledosama999/react-native-responsive-table",
-  "main": "lib/index.tsx",
+  "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "author": "Khaled Osama <khaledosama52@gmail.com@gmail.com>",
   "license": "MIT",
@@ -13,8 +13,12 @@
   "scripts": {
     "compile": "rm -rf lib && tsc -p .",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "git-cz": "./node_modules/.bin/git-cz",
     "prepare": "yarn compile",
-    "test": "jest"
+    "test": "jest",
+    "release:major": "changelog -M && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version major",
+    "release:minor": "changelog -m && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version minor",
+    "release:patch": "changelog -p && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version patch"
   },
   "devDependencies": {
     "@babel/core": "^7.18.5",
@@ -24,6 +28,9 @@
     "@types/react-native": "^0.67.8",
     "@types/react-test-renderer": "^18.0.0",
     "babel-jest": "^28.1.1",
+    "babel-preset-minify": "^0.5.2",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "3.3.0",
     "eslint": "^8.17.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "jest": "^28.1.1",
@@ -56,5 +63,10 @@
     "cells",
     "list",
     "rows"
-  ]
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }

@@ -22,6 +22,8 @@
     "@types/react-native": "^0.67.8",
     "@types/react-test-renderer": "^18.0.0",
     "babel-jest": "^28.1.1",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "3.3.0",
     "eslint": "^8.17.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "jest": "^28.1.1",
@@ -42,5 +44,10 @@
       "json",
       "node"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
