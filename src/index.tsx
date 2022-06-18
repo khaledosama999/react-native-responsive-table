@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React, { ReactChild } from 'react'
 import { ScrollView, StyleSheet, View, ViewStyle } from 'react-native'
 
 import { BORDER_COLOR } from './constants'
@@ -9,6 +9,7 @@ type TableProps = {
   style?: StyleSheet.NamedStyles<ViewStyle>
   isScrollable?: Boolean
   height?: Number | String
+  children: ReactChild[]
 }
 
 const Table: React.FC<TableProps> & { Row: typeof Row; Cell: typeof Cell } = ({

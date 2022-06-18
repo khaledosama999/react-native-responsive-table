@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { StyleSheet, SafeAreaView, Text,View } from 'react-native'
-import Table from 'react-native-responsive-table'
+import Table from 'react-native-responsive-table-view'
 
 const App = () => {
   return (
