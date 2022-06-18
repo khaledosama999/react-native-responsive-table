@@ -7,14 +7,12 @@
   "types": "lib/index.d.ts",
   "author": "Khaled Osama <khaledosama52@gmail.com@gmail.com>",
   "license": "MIT",
-  "files": [
-    "lib"
-  ],
+  "files": [ "lib" ],
   "scripts": {
     "compile": "rm -rf lib && tsc -p .",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "git-cz": "./node_modules/.bin/git-cz",
-    "prepare": "yarn compile",
+    "build": "yarn compile",
     "test": "jest",
     "release:major": "changelog -M && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version major",
     "release:minor": "changelog -m && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version minor",
