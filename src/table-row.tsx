@@ -4,8 +4,8 @@ import { StyleSheet, View, ViewStyle } from 'react-native'
 import { BORDER_COLOR } from './constants'
 
 type RowProps = {
-  style?: StyleSheet.NamedStyles<ViewStyle>
-  children: ReactChild[]
+  style?: ViewStyle
+  children: ReactChild| ReactChild[]
   isLast?: Boolean
 }
 

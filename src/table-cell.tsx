@@ -2,7 +2,7 @@ import * as React from 'react'
 import { StyleSheet, View, ViewStyle } from 'react-native'
 
 type CellProps = {
-  style?: StyleSheet.NamedStyles<ViewStyle>
+  style?: ViewStyle
 }
 
 const Cell: React.FC<CellProps> = ({ style = {}, children }) => {

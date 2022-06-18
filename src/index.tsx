@@ -6,10 +6,10 @@ import Cell from './table-cell'
 import Row from './table-row'
 
 type TableProps = {
-  style?: StyleSheet.NamedStyles<ViewStyle>
+  style?: ViewStyle,
   isScrollable?: Boolean
   height?: Number | String
-  children: ReactChild[]
+  children: ReactChild | ReactChild[]
 }
 
 const Table: React.FC<TableProps> & { Row: typeof Row; Cell: typeof Cell } = ({
