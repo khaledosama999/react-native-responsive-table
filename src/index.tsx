@@ -19,7 +19,7 @@ const Table: React.FC<TableProps> & { Row: typeof Row; Cell: typeof Cell } = ({
   height,
 }) => {
   const customStyles: any = {}
-  if (height !== null || height != undefined) customStyles.height = height
+  if (height !== null || height !== undefined) customStyles.height = height
 
   const finalTableStyle = {
     ...styles.table,
@@ -28,7 +28,9 @@ const Table: React.FC<TableProps> & { Row: typeof Row; Cell: typeof Cell } = ({
   } as any
 
   const childrenArray = React.Children.toArray(children)
-  const Container = isScrollable ? ScrollView : View
+  let Container: typeof View | typeof ScrollView = View
+
+  if (isScrollable) Container = ScrollView
 
   return (
     <Container style={finalTableStyle}>

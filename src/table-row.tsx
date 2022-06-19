@@ -1,5 +1,5 @@
-import { deepmerge } from 'deepmerge-ts/*'
-import React, { cloneElement, ReactChild } from 'react'
+import { deepmerge } from 'deepmerge-ts'
+import React, { ReactChild } from 'react'
 import { StyleSheet, View, ViewStyle } from 'react-native'
 
 import { BORDER_COLOR } from './constants'
@@ -8,14 +8,14 @@ type RowProps = {
   style?: ViewStyle
   children: ReactChild | ReactChild[]
   isLast?: Boolean
-  isLastStyle?: ViewStyle
+  lastStyle?: ViewStyle
 }
 
 const Row: React.FC<RowProps> = ({
   style = {},
   children,
   isLast = false,
-  isLastStyle = {},
+  lastStyle = {},
 }) => {
   const customStyles: any = {}
 
@@ -23,7 +23,7 @@ const Row: React.FC<RowProps> = ({
     styles.row,
     customStyles,
     style,
-    isLast ? isLastStyle : {}
+    isLast ? lastStyle : {}
   ) as any
 
   //Get the number of children and update each child to have a flex basis, so they all have equal width
@@ -34,11 +34,13 @@ const Row: React.FC<RowProps> = ({
 
   return (
     <View style={finalRowStyle}>
-      {childrenArray.map((child: any) => {
-        const childStyle = child.props || {}
+      {childrenArray.map((child: any, index) => {
+        const childStyle = child.props.style || {}
+        const isCellLast = index === childrenArray.length - 1
 
-        return cloneElement(child, {
+        return React.cloneElement(child, {
           style: { flexBasis: `${flexBasis}%`, ...childStyle },
+          isLast: isCellLast,
         })
       })}
     </View>
