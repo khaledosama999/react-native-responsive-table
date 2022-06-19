@@ -1,0 +1,941 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table Renders a normal table correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "grey",
+      "borderRadius": 4,
+      "borderStyle": "solid",
+      "borderWidth": 1,
+      "display": "flex",
+      "flexDirection": "column",
+      "height": undefined,
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "borderBottomWidth": 1,
+        "borderColor": "grey",
+        "borderStyle": "solid",
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexBasis": "50%",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "center",
+          "paddingHorizontal": 4,
+          "paddingVertical": 4,
+        }
+      }
+    >
+      <Text>
+        text 1
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexBasis": "50%",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "center",
+          "paddingHorizontal": 4,
+          "paddingVertical": 4,
+        }
+      }
+    >
+      <Text>
+        text 2
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "borderBottomWidth": 1,
+        "borderColor": "grey",
+        "borderStyle": "solid",
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexBasis": "50%",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "center",
+          "paddingHorizontal": 4,
+          "paddingVertical": 4,
+        }
+      }
+    >
+      <Text>
+        text 3
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexBasis": "50%",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "center",
+          "paddingHorizontal": 4,
+          "paddingVertical": 4,
+        }
+      }
+    >
+      <Text>
+        text 4
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "borderBottomWidth": 0,
+        "borderColor": "grey",
+        "borderStyle": "solid",
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexBasis": "50%",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "center",
+          "paddingHorizontal": 4,
+          "paddingVertical": 4,
+        }
+      }
+    >
+      <Text>
+        text 5
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexBasis": "50%",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "center",
+          "paddingHorizontal": 4,
+          "paddingVertical": 4,
+        }
+      }
+    >
+      <Text>
+        text 6
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Table Renders a normal table with cell overridden last styles correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "grey",
+      "borderRadius": 4,
+      "borderStyle": "solid",
+      "borderWidth": 1,
+      "display": "flex",
+      "flexDirection": "column",
+      "height": undefined,
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "borderBottomWidth": 1,
+        "borderColor": "grey",
+        "borderStyle": "solid",
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderRadius": 4,
+          "display": "flex",
+          "flexBasis": "100%",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "center",
+          "paddingHorizontal": 4,
+          "paddingVertical": 4,
+        }
+      }
+    >
+      <Text>
+        text 1
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "borderBottomWidth": 0,
+        "borderColor": "grey",
+        "borderStyle": "solid",
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderRadius": 4,
+          "display": "flex",
+          "flexBasis": "100%",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "center",
+          "paddingHorizontal": 4,
+          "paddingVertical": 4,
+        }
+      }
+    >
+      <Text>
+        text 1
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Table Renders a normal table with one row and cell with overridden styles correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "grey",
+      "borderRadius": 4,
+      "borderStyle": "solid",
+      "borderWidth": 1,
+      "display": "flex",
+      "flexDirection": "column",
+      "height": undefined,
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "borderBottomWidth": 0,
+        "borderColor": "grey",
+        "borderStyle": "solid",
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderRadius": 4,
+          "display": "flex",
+          "flexBasis": "100%",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "center",
+          "paddingHorizontal": 4,
+          "paddingVertical": 4,
+        }
+      }
+    >
+      <Text>
+        text 1
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Table Renders a normal table with one row and one cell correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "grey",
+      "borderRadius": 4,
+      "borderStyle": "solid",
+      "borderWidth": 1,
+      "display": "flex",
+      "flexDirection": "column",
+      "height": undefined,
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "borderBottomWidth": 0,
+        "borderColor": "grey",
+        "borderStyle": "solid",
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexBasis": "100%",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "center",
+          "paddingHorizontal": 4,
+          "paddingVertical": 4,
+        }
+      }
+    >
+      <Text>
+        text 1
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Table Renders a normal table with one row and overridden styles correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "grey",
+      "borderRadius": 4,
+      "borderStyle": "solid",
+      "borderWidth": 1,
+      "display": "flex",
+      "flexDirection": "column",
+      "height": undefined,
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "borderBottomWidth": 0,
+        "borderColor": "grey",
+        "borderStyle": "solid",
+        "borderWidth": 5,
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexBasis": "50%",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "center",
+          "paddingHorizontal": 4,
+          "paddingVertical": 4,
+        }
+      }
+    >
+      <Text>
+        text 1
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexBasis": "50%",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "center",
+          "paddingHorizontal": 4,
+          "paddingVertical": 4,
+        }
+      }
+    >
+      <Text>
+        text 2
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Table Renders a normal table with one row correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "grey",
+      "borderRadius": 4,
+      "borderStyle": "solid",
+      "borderWidth": 1,
+      "display": "flex",
+      "flexDirection": "column",
+      "height": undefined,
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "borderBottomWidth": 0,
+        "borderColor": "grey",
+        "borderStyle": "solid",
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexBasis": "50%",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "center",
+          "paddingHorizontal": 4,
+          "paddingVertical": 4,
+        }
+      }
+    >
+      <Text>
+        text 1
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexBasis": "50%",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "center",
+          "paddingHorizontal": 4,
+          "paddingVertical": 4,
+        }
+      }
+    >
+      <Text>
+        text 2
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Table Renders a normal table with overridden styles correctly 1`] = `
+<RCTScrollView
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "grey",
+      "borderRadius": 4,
+      "borderStyle": "solid",
+      "borderWidth": 4,
+      "display": "flex",
+      "flexDirection": "column",
+      "height": undefined,
+      "width": "100%",
+    }
+  }
+>
+  <View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "grey",
+          "borderStyle": "solid",
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flexBasis": "50%",
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "center",
+            "paddingHorizontal": 4,
+            "paddingVertical": 4,
+          }
+        }
+      >
+        <Text>
+          text 1
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flexBasis": "50%",
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "center",
+            "paddingHorizontal": 4,
+            "paddingVertical": 4,
+          }
+        }
+      >
+        <Text>
+          text 2
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "grey",
+          "borderStyle": "solid",
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flexBasis": "50%",
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "center",
+            "paddingHorizontal": 4,
+            "paddingVertical": 4,
+          }
+        }
+      >
+        <Text>
+          text 3
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flexBasis": "50%",
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "center",
+            "paddingHorizontal": 4,
+            "paddingVertical": 4,
+          }
+        }
+      >
+        <Text>
+          text 4
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 0,
+          "borderColor": "grey",
+          "borderStyle": "solid",
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flexBasis": "50%",
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "center",
+            "paddingHorizontal": 4,
+            "paddingVertical": 4,
+          }
+        }
+      >
+        <Text>
+          text 5
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flexBasis": "50%",
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "center",
+            "paddingHorizontal": 4,
+            "paddingVertical": 4,
+          }
+        }
+      >
+        <Text>
+          text 6
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Table Renders a normal table with row overridden last styles correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "grey",
+      "borderRadius": 4,
+      "borderStyle": "solid",
+      "borderWidth": 1,
+      "display": "flex",
+      "flexDirection": "column",
+      "height": undefined,
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "borderBottomWidth": 1,
+        "borderColor": "grey",
+        "borderStyle": "solid",
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderRadius": 4,
+          "display": "flex",
+          "flexBasis": "100%",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "center",
+          "paddingHorizontal": 4,
+          "paddingVertical": 4,
+        }
+      }
+    >
+      <Text>
+        text 1
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "borderBottomWidth": 0,
+        "borderColor": "grey",
+        "borderStyle": "solid",
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderRadius": 4,
+          "display": "flex",
+          "flexBasis": "100%",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "center",
+          "paddingHorizontal": 4,
+          "paddingVertical": 4,
+        }
+      }
+    >
+      <Text>
+        text 1
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Table Renders a scrollable table correctly 1`] = `
+<RCTScrollView
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "grey",
+      "borderRadius": 4,
+      "borderStyle": "solid",
+      "borderWidth": 1,
+      "display": "flex",
+      "flexDirection": "column",
+      "height": undefined,
+      "width": "100%",
+    }
+  }
+>
+  <View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "grey",
+          "borderStyle": "solid",
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flexBasis": "50%",
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "center",
+            "paddingHorizontal": 4,
+            "paddingVertical": 4,
+          }
+        }
+      >
+        <Text>
+          text 1
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flexBasis": "50%",
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "center",
+            "paddingHorizontal": 4,
+            "paddingVertical": 4,
+          }
+        }
+      >
+        <Text>
+          text 2
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "grey",
+          "borderStyle": "solid",
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flexBasis": "50%",
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "center",
+            "paddingHorizontal": 4,
+            "paddingVertical": 4,
+          }
+        }
+      >
+        <Text>
+          text 3
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flexBasis": "50%",
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "center",
+            "paddingHorizontal": 4,
+            "paddingVertical": 4,
+          }
+        }
+      >
+        <Text>
+          text 4
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "borderBottomWidth": 0,
+          "borderColor": "grey",
+          "borderStyle": "solid",
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flexBasis": "50%",
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "center",
+            "paddingHorizontal": 4,
+            "paddingVertical": 4,
+          }
+        }
+      >
+        <Text>
+          text 5
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flexBasis": "50%",
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "center",
+            "paddingHorizontal": 4,
+            "paddingVertical": 4,
+          }
+        }
+      >
+        <Text>
+          text 6
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
