@@ -1,3 +1,19 @@
+### 1.2.0 (2022-06-19)
+
+##### Documentation Changes
+
+* **readme:**  add last style props for cell and row (e803a1a0)
+
+##### New Features
+
+* **row and cell:**
+  *  add last style (606e7857)
+  *  add is last style for that will be applied for the last row or cell (d6bd13f7)
+
+##### Tests
+
+* **table:**  add snapshot tests (b479a680)
+
 ### 1.1.0 (2022-06-18)
 
 ##### Chores
