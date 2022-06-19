@@ -90,7 +90,7 @@ The row element in the table, each of it's children will have **equal width** an
 | ----- | ------ | ------- | ------- |
 | children | **true** | - | The array of cells should be displayed in the row, preferably should be the `Cell` element provided by this package but feel free to provide your own
 | style | false | `{}` | Override the styles for the given row (padding ...)|
-| lastStyle | false | {} | Style that will only be applied to the last row
+| lastStyle | false | `{}` | Style that will only be applied to the last row
 
 ### Cell
 The cell element in each row. Also has default stylings
@@ -113,7 +113,7 @@ The cell element in each row. Also has default stylings
 | ----- | ------ | ------- | ------- |
 | children | **true** | - | The children /child to be displayed inside the cell
 | style | false | `{}` | Override the styles for the given cell (padding ...)|
-| lastStyle | false | {} | Style that will only be applied to the last cell
+| lastStyle | false | `{}` | Style that will only be applied to the last cell
 ## General Notes
 - Check out the examples [here](./example/src/App.tsx)
 
