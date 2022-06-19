@@ -32,10 +32,12 @@
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "^8.17.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "generate-changelog": "^1.8.0",
     "jest": "^28.1.1",
     "metro-react-native-babel-preset": "^0.71.1",
+    "prettier": "^2.7.1",
     "react": "^18.2.0",
     "react-native": "^0.68.2",
     "react-test-renderer": "^18.2.0",
@@ -69,5 +71,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "deepmerge-ts": "^4.2.1"
   }
 }

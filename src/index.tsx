@@ -6,7 +6,7 @@ import Cell from './table-cell'
 import Row from './table-row'
 
 type TableProps = {
-  style?: ViewStyle,
+  style?: ViewStyle
   isScrollable?: Boolean
   height?: Number | String
   children: ReactChild | ReactChild[]

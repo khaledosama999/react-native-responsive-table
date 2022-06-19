@@ -1,15 +1,24 @@
+import { deepmerge } from 'deepmerge-ts'
 import * as React from 'react'
 import { StyleSheet, View, ViewStyle } from 'react-native'
 
 type CellProps = {
   style?: ViewStyle
+  isLast?: Boolean
+  lastStyle?: ViewStyle
 }
 
-const Cell: React.FC<CellProps> = ({ style = {}, children }) => {
-  const finalCellStyle = {
-    ...styles.cell,
-    ...style,
-  } as any
+const Cell: React.FC<CellProps> = ({
+  style = {},
+  children,
+  isLast = false,
+  lastStyle = {},
+}) => {
+  const finalCellStyle = deepmerge(
+    styles.cell,
+    style,
+    isLast ? lastStyle : {}
+  ) as any
 
   return <View style={finalCellStyle}>{children}</View>
 }

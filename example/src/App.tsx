@@ -20,44 +20,44 @@ const App = () => {
       </View>
       <View style={styles.container}>
         <Table isScrollable={false} style={{display: tableName === 'normal' ? 'flex':'none'}}>
-          <Table.Row>
+          <Table.Row isLastStyle={{borderBottomWidth:0}}>
             <Table.Cell><Text>text 1</Text></Table.Cell>
             <Table.Cell><Text>text 2</Text></Table.Cell>
           </Table.Row>
-          <Table.Row>
+          <Table.Row isLastStyle={{borderBottomWidth:0}}>
             <Table.Cell><Text>text 3</Text></Table.Cell>
             <Table.Cell><Text>text 4</Text></Table.Cell>
           </Table.Row>
-          <Table.Row>
+          <Table.Row isLastStyle={{borderBottomWidth:0}}>
             <Table.Cell><Text>text 5</Text></Table.Cell>
             <Table.Cell><Text>text 6</Text></Table.Cell>
           </Table.Row>
         </Table>
 
         <Table isScrollable={true} style={{display: tableName === 'scrollable' ? 'flex':'none'}}>
-          <Table.Row>
+          <Table.Row isLastStyle={{borderBottomWidth:0}}>
             <Table.Cell><Text>text 1</Text></Table.Cell>
             <Table.Cell><Text>text 2</Text></Table.Cell>
           </Table.Row>
-          <Table.Row>
+          <Table.Row isLastStyle={{borderBottomWidth:0}}>
             <Table.Cell><Text>text 3</Text></Table.Cell>
             <Table.Cell><Text>text 4</Text></Table.Cell>
           </Table.Row>
-          <Table.Row>
+          <Table.Row isLastStyle={{borderBottomWidth:0}}>
             <Table.Cell><Text>text 5</Text></Table.Cell>
             <Table.Cell><Text>text 6</Text></Table.Cell>
           </Table.Row>
         </Table>
 
         <Table isScrollable={true} style={{display: tableName === 'columns' ? 'flex':'none'}}>
-          <Table.Row>
+          <Table.Row isLastStyle={{borderBottomWidth:0}}>
             <Table.Cell><Text>text 1</Text></Table.Cell>
           </Table.Row>
-          <Table.Row>
+          <Table.Row isLastStyle={{borderBottomWidth:0}}>
             <Table.Cell><Text>text 2</Text></Table.Cell>
             <Table.Cell><Text>text 3</Text></Table.Cell>
           </Table.Row>
-          <Table.Row>
+          <Table.Row isLastStyle={{borderBottomWidth:0}}>
             <Table.Cell><Text>text 4</Text></Table.Cell>
             <Table.Cell><Text>text 5</Text></Table.Cell>
             <Table.Cell><Text>text 6</Text></Table.Cell>

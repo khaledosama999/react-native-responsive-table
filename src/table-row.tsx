@@ -1,3 +1,4 @@
+import { deepmerge } from 'deepmerge-ts/*'
 import React, { cloneElement, ReactChild } from 'react'
 import { StyleSheet, View, ViewStyle } from 'react-native'
 
@@ -5,20 +6,25 @@ import { BORDER_COLOR } from './constants'
 
 type RowProps = {
   style?: ViewStyle
-  children: ReactChild| ReactChild[]
+  children: ReactChild | ReactChild[]
   isLast?: Boolean
+  isLastStyle?: ViewStyle
 }
 
-const Row: React.FC<RowProps> = ({ style = {}, children, isLast = false }) => {
+const Row: React.FC<RowProps> = ({
+  style = {},
+  children,
+  isLast = false,
+  isLastStyle = {},
+}) => {
   const customStyles: any = {}
 
-  if (isLast) customStyles.borderBottomWidth = 0
-
-  const finalRowStyle = {
-    ...styles.row,
-    ...customStyles,
-    ...style,
-  } as any
+  const finalRowStyle = deepmerge(
+    styles.row,
+    customStyles,
+    style,
+    isLast ? isLastStyle : {}
+  ) as any
 
   //Get the number of children and update each child to have a flex basis, so they all have equal width
   // in the table
