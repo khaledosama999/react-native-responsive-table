@@ -1,3 +1,13 @@
+### 1.3.0 (2022-06-21)
+
+##### New Features
+
+* **rows and cells:**  add is first style to rows and cells (b2304984)
+
+##### Bug Fixes
+
+* **row and cell:**  fix docs (831d51d2)
+
 ### 1.2.0 (2022-06-19)
 
 ##### Documentation Changes
