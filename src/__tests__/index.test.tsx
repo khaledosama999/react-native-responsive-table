@@ -9,7 +9,7 @@ describe('Table', () => {
     const normalTable = renderer
       .create(
         <Table isScrollable={false}>
-          <Table.Row isLastStyle={{ borderBottomWidth: 0 }}>
+          <Table.Row lastStyle={{ borderBottomWidth: 0 }}>
             <Table.Cell>
               <Text>text 1</Text>
             </Table.Cell>
@@ -17,7 +17,7 @@ describe('Table', () => {
               <Text>text 2</Text>
             </Table.Cell>
           </Table.Row>
-          <Table.Row isLastStyle={{ borderBottomWidth: 0 }}>
+          <Table.Row lastStyle={{ borderBottomWidth: 0 }}>
             <Table.Cell>
               <Text>text 3</Text>
             </Table.Cell>
@@ -25,7 +25,7 @@ describe('Table', () => {
               <Text>text 4</Text>
             </Table.Cell>
           </Table.Row>
-          <Table.Row isLastStyle={{ borderBottomWidth: 0 }}>
+          <Table.Row lastStyle={{ borderBottomWidth: 0 }}>
             <Table.Cell>
               <Text>text 5</Text>
             </Table.Cell>
@@ -44,7 +44,7 @@ describe('Table', () => {
     const normalTableWithOneRow = renderer
       .create(
         <Table isScrollable={false}>
-          <Table.Row isLastStyle={{ borderBottomWidth: 0 }}>
+          <Table.Row lastStyle={{ borderBottomWidth: 0 }}>
             <Table.Cell>
               <Text>text 1</Text>
             </Table.Cell>
@@ -63,7 +63,7 @@ describe('Table', () => {
     const normalTableWithOneRowAndCell = renderer
       .create(
         <Table isScrollable={false}>
-          <Table.Row isLastStyle={{ borderBottomWidth: 0 }}>
+          <Table.Row lastStyle={{ borderBottomWidth: 0 }}>
             <Table.Cell>
               <Text>text 1</Text>
             </Table.Cell>
@@ -79,7 +79,7 @@ describe('Table', () => {
     const normalTable = renderer
       .create(
         <Table isScrollable={true}>
-          <Table.Row isLastStyle={{ borderBottomWidth: 0 }}>
+          <Table.Row lastStyle={{ borderBottomWidth: 0 }}>
             <Table.Cell>
               <Text>text 1</Text>
             </Table.Cell>
@@ -87,7 +87,7 @@ describe('Table', () => {
               <Text>text 2</Text>
             </Table.Cell>
           </Table.Row>
-          <Table.Row isLastStyle={{ borderBottomWidth: 0 }}>
+          <Table.Row lastStyle={{ borderBottomWidth: 0 }}>
             <Table.Cell>
               <Text>text 3</Text>
             </Table.Cell>
@@ -95,7 +95,7 @@ describe('Table', () => {
               <Text>text 4</Text>
             </Table.Cell>
           </Table.Row>
-          <Table.Row isLastStyle={{ borderBottomWidth: 0 }}>
+          <Table.Row lastStyle={{ borderBottomWidth: 0 }}>
             <Table.Cell>
               <Text>text 5</Text>
             </Table.Cell>
@@ -114,7 +114,7 @@ describe('Table', () => {
     const scrollableTable = renderer
       .create(
         <Table isScrollable={true} style={{ borderWidth: 4 }}>
-          <Table.Row isLastStyle={{ borderBottomWidth: 0 }}>
+          <Table.Row lastStyle={{ borderBottomWidth: 0 }}>
             <Table.Cell>
               <Text>text 1</Text>
             </Table.Cell>
@@ -122,7 +122,7 @@ describe('Table', () => {
               <Text>text 2</Text>
             </Table.Cell>
           </Table.Row>
-          <Table.Row isLastStyle={{ borderBottomWidth: 0 }}>
+          <Table.Row lastStyle={{ borderBottomWidth: 0 }}>
             <Table.Cell>
               <Text>text 3</Text>
             </Table.Cell>
@@ -130,7 +130,7 @@ describe('Table', () => {
               <Text>text 4</Text>
             </Table.Cell>
           </Table.Row>
-          <Table.Row isLastStyle={{ borderBottomWidth: 0 }}>
+          <Table.Row lastStyle={{ borderBottomWidth: 0 }}>
             <Table.Cell>
               <Text>text 5</Text>
             </Table.Cell>
@@ -150,7 +150,7 @@ describe('Table', () => {
       .create(
         <Table isScrollable={false}>
           <Table.Row
-            isLastStyle={{ borderBottomWidth: 0 }}
+            lastStyle={{ borderBottomWidth: 0 }}
             style={{ borderWidth: 5 }}
           >
             <Table.Cell>
@@ -171,7 +171,7 @@ describe('Table', () => {
     const normalTableWithOneRowAndOneCell = renderer
       .create(
         <Table isScrollable={false}>
-          <Table.Row isLastStyle={{ borderBottomWidth: 0 }}>
+          <Table.Row lastStyle={{ borderBottomWidth: 0 }}>
             <Table.Cell style={{ borderRadius: 4 }}>
               <Text>text 1</Text>
             </Table.Cell>
@@ -187,12 +187,12 @@ describe('Table', () => {
     const normalTableWithOneRowWithLastStyle = renderer
       .create(
         <Table isScrollable={false}>
-          <Table.Row isLastStyle={{ borderBottomWidth: 0 }}>
+          <Table.Row lastStyle={{ borderBottomWidth: 0 }}>
             <Table.Cell style={{ borderRadius: 4 }}>
               <Text>text 1</Text>
             </Table.Cell>
           </Table.Row>
-          <Table.Row isLastStyle={{ borderBottomWidth: 0 }}>
+          <Table.Row lastStyle={{ borderBottomWidth: 0 }}>
             <Table.Cell style={{ borderRadius: 4 }}>
               <Text>text 1</Text>
             </Table.Cell>
@@ -208,14 +208,57 @@ describe('Table', () => {
     const normalTableWithCellLastStyle = renderer
       .create(
         <Table isScrollable={false}>
-          <Table.Row isLastStyle={{ borderBottomWidth: 0 }}>
+          <Table.Row lastStyle={{ borderBottomWidth: 0 }}>
             <Table.Cell lastStyle={{ borderRadius: 4 }}>
               <Text>text 1</Text>
             </Table.Cell>
           </Table.Row>
-          <Table.Row isLastStyle={{ borderBottomWidth: 0 }}>
+          <Table.Row lastStyle={{ borderBottomWidth: 0 }}>
             <Table.Cell lastStyle={{ borderRadius: 4 }}>
               <Text>text 1</Text>
+            </Table.Cell>
+          </Table.Row>
+        </Table>
+      )
+      .toJSON()
+
+    expect(normalTableWithCellLastStyle).toMatchSnapshot()
+  })
+
+  it('Renders a normal table with row overridden first styles correctly', () => {
+    const normalTableWithOneRowWithLastStyle = renderer
+      .create(
+        <Table isScrollable={false}>
+          <Table.Row lastStyle={{ borderBottomWidth: 0 }}>
+            <Table.Cell
+              firstStyle={{ borderWidth: 0 }}
+              style={{ borderRadius: 4 }}
+            >
+              <Text>text 1</Text>
+            </Table.Cell>
+          </Table.Row>
+          <Table.Row>
+            <Table.Cell style={{ borderRadius: 4 }}>
+              <Text>text 1</Text>
+            </Table.Cell>
+          </Table.Row>
+        </Table>
+      )
+      .toJSON()
+
+    expect(normalTableWithOneRowWithLastStyle).toMatchSnapshot()
+  })
+
+  it('Renders a normal table with cell overridden first styles correctly', () => {
+    const normalTableWithCellLastStyle = renderer
+      .create(
+        <Table isScrollable={false}>
+          <Table.Row>
+            <Table.Cell firstStyle={{ borderWidth: 4 }}>
+              <Text>text 1</Text>
+            </Table.Cell>
+            <Table.Cell>
+              <Text>text 2</Text>
             </Table.Cell>
           </Table.Row>
         </Table>

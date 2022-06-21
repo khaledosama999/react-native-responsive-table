@@ -63,7 +63,7 @@ Table represents the container for all our rows, it has some default stylings
 
 | Name | Required | Default | Description |
 | ----- | ------ | ------- | ------- |
-| children | **true** | - | The array of rows the table should display, preferably should be the `Row` element provided by this package but feel free to provide your own
+| children | **true** | `-` | The array of rows the table should display, preferably should be the `Row` element provided by this package but feel free to provide your own
 | style | false | `{}` | Override the styles for the given table (border, color....)|
 | isScrollable | false | false | Makes the table itself scrollable |
 | height | false | undefined | can be used to set the height of the table, should be used with `isScrollable` can also be provided by the style prop|
@@ -88,9 +88,10 @@ The row element in the table, each of it's children will have **equal width** an
 
 | Name | Required | Default | Description |
 | ----- | ------ | ------- | ------- |
-| children | **true** | - | The array of cells should be displayed in the row, preferably should be the `Cell` element provided by this package but feel free to provide your own
+| children | **true** | `-` | The array of cells should be displayed in the row, preferably should be the `Cell` element provided by this package but feel free to provide your own
 | style | false | `{}` | Override the styles for the given row (padding ...)|
 | lastStyle | false | `{}` | Style that will only be applied to the last row
+| firstStyle | false | `{}` | Style that will only be applied to the first row
 
 ### Cell
 The cell element in each row. Also has default stylings
@@ -111,16 +112,17 @@ The cell element in each row. Also has default stylings
 
 | Name | Required | Default | Description |
 | ----- | ------ | ------- | ------- |
-| children | **true** | - | The children /child to be displayed inside the cell
+| children | **true** | `-` | The children /child to be displayed inside the cell
 | style | false | `{}` | Override the styles for the given cell (padding ...)|
-| lastStyle | false | `{}` | Style that will only be applied to the last cell
+| lastStyle | false | `{}` | Style that will only be applied to the last cell in a row
+| firstStyle | false | `{}` | Style that will only be applied to the first cell in a row
 ## General Notes
 - Check out the examples [here](./example/src/App.tsx)
 
 ## Future Improvements  
-- [ ] add is last style and is first style to `Row` element to provide different styling for the last or first row as in some cases they might be handled differently.
+- [x] add is last style and is first style to `Row` element to provide different styling for the last or first row as in some cases they might be handled differently.
 
-- [ ] add is last style and is first style to `Cell` element to provide different styling for the last or first cell as in some cases they might be handled differently.
+- [x] add is last style and is first style to `Cell` element to provide different styling for the last or first cell as in some cases they might be handled differently.
 
 - [ ] add refs to all the components 
 

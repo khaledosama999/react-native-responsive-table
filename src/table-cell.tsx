@@ -6,6 +6,8 @@ type CellProps = {
   style?: ViewStyle
   isLast?: Boolean
   lastStyle?: ViewStyle
+  isFirst?: Boolean
+  firstStyle?: ViewStyle
 }
 
 const Cell: React.FC<CellProps> = ({
@@ -13,11 +15,14 @@ const Cell: React.FC<CellProps> = ({
   children,
   isLast = false,
   lastStyle = {},
+  isFirst = false,
+  firstStyle,
 }) => {
   const finalCellStyle = deepmerge(
     styles.cell,
     style,
-    isLast ? lastStyle : {}
+    isLast ? lastStyle : {},
+    isFirst ? firstStyle : {}
   ) as any
 
   return <View style={finalCellStyle}>{children}</View>

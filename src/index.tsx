@@ -36,10 +36,12 @@ const Table: React.FC<TableProps> & { Row: typeof Row; Cell: typeof Cell } = ({
     <Container style={finalTableStyle}>
       {childrenArray.map((child: any, index) => {
         const isLast = index === childrenArray.length - 1
+        const isFirst = index === 0
 
         return React.cloneElement(child, {
           ...child.props,
           isLast,
+          isFirst,
         })
       })}
     </Container>
