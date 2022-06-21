@@ -1,3 +1,17 @@
+### 1.4.0 (2022-06-21)
+
+##### Continuous Integration
+
+* **testing:**  setup a CI/CD for running tests (a933609a)
+
+##### Bug Fixes
+
+* **cells:**  fix cell first style default option (14af0e6f)
+
+##### Tests
+
+* **testing:**  fix jest test runnner exiting (c70f5d39)
+
 ### 1.3.0 (2022-06-21)
 
 ##### New Features
