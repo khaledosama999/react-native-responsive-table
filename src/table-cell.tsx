@@ -16,7 +16,7 @@ const Cell: React.FC<CellProps> = ({
   isLast = false,
   lastStyle = {},
   isFirst = false,
-  firstStyle,
+  firstStyle = {},
 }) => {
   const finalCellStyle = deepmerge(
     styles.cell,

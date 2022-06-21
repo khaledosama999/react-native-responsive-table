@@ -214,7 +214,7 @@ describe('Table', () => {
             </Table.Cell>
           </Table.Row>
           <Table.Row lastStyle={{ borderBottomWidth: 0 }}>
-            <Table.Cell lastStyle={{ borderRadius: 4 }}>
+            <Table.Cell lastStyle={{ borderRadius: 5 }}>
               <Text>text 1</Text>
             </Table.Cell>
           </Table.Row>
@@ -229,11 +229,8 @@ describe('Table', () => {
     const normalTableWithOneRowWithLastStyle = renderer
       .create(
         <Table isScrollable={false}>
-          <Table.Row lastStyle={{ borderBottomWidth: 0 }}>
-            <Table.Cell
-              firstStyle={{ borderWidth: 0 }}
-              style={{ borderRadius: 4 }}
-            >
+          <Table.Row firstStyle={{ borderWidth: 0 }}>
+            <Table.Cell style={{ borderRadius: 4 }}>
               <Text>text 1</Text>
             </Table.Cell>
           </Table.Row>
