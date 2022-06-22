@@ -2,7 +2,7 @@
   "name": "react-native-responsive-table-view",
   "version": "1.4.0",
   "description": "",
-  "homepage": "https://github.com/khaledosama999/react-native-responsive-table-view",
+  "homepage": "https://github.com/khaledosama999/react-native-responsive-table",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "author": "Khaled Osama <khaledosama52@gmail.com@gmail.com>",
